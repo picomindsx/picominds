@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+@theme inline {
+  --font-highlight: var(--font-highlight);
+  --font-body: var(--font-body);
+  --font-secondary: var(--font-secondary);
+  --font-sign: var(--font-sign);
+}
