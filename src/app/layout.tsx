@@ -7,18 +7,21 @@ import Navbar from "@/components/navbar";
 const fahkwang = Fahkwang({
   variable: "--font-highlight",
   weight: ["200", "300", "400", "500", "600", "700"],
+  subsets: ["latin"],
 });
 
 // body font
 const fredoka = Fredoka({
   variable: "--font-body",
   weight: ["300", "400", "500", "600", "700"],
+  subsets: ["latin"],
 });
 
 // secondary font
 const fustat = Fustat({
   variable: "--font-secondary",
   weight: ["200", "300", "400", "500", "600", "700", "800"],
+  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {

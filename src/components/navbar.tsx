@@ -5,6 +5,7 @@ import React from "react";
 const signFont = Meow_Script({
   variable: "--font-sign",
   weight: ["400"],
+  subsets: ["latin"],
 });
 
 const Navbar = () => {
