@@ -1,0 +1,119 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --step--2: clamp(0.6944rem, 0.6577rem + 0.1836vw, 0.8rem);
+  --step--1: clamp(0.8333rem, 0.7754rem + 0.2899vw, 1rem);
+  --step-0: clamp(1rem, 0.913rem + 0.4348vw, 1.25rem);
+  --step-1: clamp(1.2rem, 1.0739rem + 0.6304vw, 1.5625rem);
+  --step-2: clamp(1.44rem, 1.2615rem + 0.8924vw, 1.9531rem);
+  --step-3: clamp(1.728rem, 1.4799rem + 1.2407vw, 2.4414rem);
+  --step-4: clamp(2.0736rem, 1.7334rem + 1.7011vw, 3.0518rem);
+  --step-5: clamp(2.4883rem, 2.027rem + 2.3067vw, 3.8147rem);
+  --step-6: clamp(2.8883rem, 2.327rem + 2.8067vw, 4.4147rem);
+
+  --space-3xs: clamp(0.25rem, 0.2283rem + 0.1087vw, 0.3125rem);
+  --space-2xs: clamp(0.5rem, 0.4565rem + 0.2174vw, 0.625rem);
+  --space-xs: clamp(0.75rem, 0.6848rem + 0.3261vw, 0.9375rem);
+  --space-s: clamp(1rem, 0.913rem + 0.4348vw, 1.25rem);
+  --space-m: clamp(1.5rem, 1.3696rem + 0.6522vw, 1.875rem);
+  --space-l: clamp(2rem, 1.8261rem + 0.8696vw, 2.5rem);
+  --space-xl: clamp(3rem, 2.7391rem + 1.3043vw, 3.75rem);
+  --space-2xl: clamp(4rem, 3.6522rem + 1.7391vw, 5rem);
+  --space-3xl: clamp(6rem, 5.4783rem + 2.6087vw, 7.5rem);
+
+  /* One-up pairs */
+  --space-3xs-2xs: clamp(0.25rem, 0.1196rem + 0.6522vw, 0.625rem);
+  --space-2xs-xs: clamp(0.5rem, 0.3478rem + 0.7609vw, 0.9375rem);
+  --space-xs-s: clamp(0.75rem, 0.5761rem + 0.8696vw, 1.25rem);
+  --space-s-m: clamp(1rem, 0.6957rem + 1.5217vw, 1.875rem);
+  --space-m-l: clamp(1.5rem, 1.1522rem + 1.7391vw, 2.5rem);
+  --space-l-xl: clamp(2rem, 1.3913rem + 3.0435vw, 3.75rem);
+  --space-xl-2xl: clamp(3rem, 2.3043rem + 3.4783vw, 5rem);
+  --space-2xl-3xl: clamp(4rem, 2.7826rem + 6.087vw, 7.5rem);
+
+  /* Custom pairs */
+  --space-s-l: clamp(1rem, 0.4783rem + 2.6087vw, 2.5rem);
+}
+
+@theme inline {
+  --font-highlight: var(--font-highlight);
+  --font-body: var(--font-body);
+  --font-secondary: var(--font-secondary);
+  --font-sign: var(--font-sign);
+  --font-serif: var(--font-serif);
+
+  --text-xl: var(--step-0);
+  --text-2xl: var(--step-1);
+  --text-3xl: var(--step-2);
+  --text-4xl: var(--step-3);
+  --text-5xl: var(--step-4);
+  --text-6xl: var(--step-5);
+  --text-7xl: var(--step-6);
+
+  --container-xsm: 400px;
+
+  --color-yellow-50: #ffffe7;
+  --color-yellow-100: #ffffc1;
+  --color-yellow-200: #fffc86;
+  --color-yellow-300: #fff141;
+  --color-yellow-400: #ffe20d;
+  --color-yellow-500: #ffd300;
+  --color-yellow-600: #d19b00;
+  --color-yellow-700: #a66f02;
+  --color-yellow-800: #89560a;
+  --color-yellow-900: #74460f;
+  --color-yellow-950: #442504;
+
+  --color-pink-50: #fef4ff;
+  --color-pink-100: #fde8ff;
+  --color-pink-200: #fad0fe;
+  --color-pink-300: #f9abfc;
+  --color-pink-400: #f679f9;
+  --color-pink-500: #ec44ef;
+  --color-pink-600: #d326d3;
+  --color-pink-700: #af1cab;
+  --color-pink-800: #8f198b;
+  --color-pink-900: #751a70;
+  --color-pink-950: #4e044a;
+
+  --color-indigo-50: #f2f0ff;
+  --color-indigo-100: #e8e4ff;
+  --color-indigo-200: #d4cdff;
+  --color-indigo-300: #b6a5ff;
+  --color-indigo-400: #9372ff;
+  --color-indigo-500: #723aff;
+  --color-indigo-600: #6412ff;
+  --color-indigo-700: #5501ff;
+  --color-indigo-800: #4700d7;
+  --color-indigo-900: #3c02b0;
+  --color-indigo-950: #210078;
+}
+
+@layer components {
+  .app-container {
+    @apply max-w-[1220px] max-md:max-w-[950px] max-sm:max-w-[375px];
+  }
+
+  /* Hide scrollbar for Chrome, Safari, and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for Firefox */
+  .no-scrollbar {
+    scrollbar-width: none;
+  }
+
+  /* Hide scrollbar for IE and Edge */
+  .no-scrollbar {
+    -ms-overflow-style: none;
+  }
+}
