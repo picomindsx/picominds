@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Fahkwang, Fredoka, Fustat, Gilda_Display } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/navbar";
+// import Navbar from "@/components/navbar";
 
 // highlight font
 const fahkwang = Fahkwang({
@@ -49,7 +49,6 @@ export default function RootLayout({
       <body
         className={`${fahkwang.variable} ${gilda.variable} ${fustat.variable} ${fredoka.variable} antialiased`}
       >
-        <Navbar />
         {children}
       </body>
     </html>
